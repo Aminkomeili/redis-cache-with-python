@@ -71,21 +71,21 @@ class RedisCache:
 cache = RedisCache()
 
 # ذخیره کردن یک مقدار در کش Redis با استفاده از کلید و زمان انقضا
-cache.set('my_key', {'name': 'John', 'age': 30}, expire=60)
+cache.set('my_key', {'name': 'Amin', 'age': 30}, expire=60)
 
 # بازیابی یک مقدار از کش Redis با استفاده از کلید
 value = cache.get('my_key')
 print(value)
 
 # افزودن یک مورد به یک لیست در کش Redis با استفاده از کلید
-cache.lpush('my_list', {'name': 'Jane', 'age': 25})
+cache.lpush('my_list', {'name': 'Ali', 'age': 25})
 
 # بازیابی لیست از کش Redis با استفاده از کلید
 my_list = cache.lrange('my_list')
 print(my_list)
 
 # ذخیره یک مقدار در دیکشنری در کش Redis با استفاده از کلید و فیلد
-cache.hset('my_dict', 'name', 'Bob')
+cache.hset('my_dict', 'name', 'Reza')
 
 # بازیابی مقدار یک فیلد از دیکشنری در کش Redis با استفاده از کلید و فیلد
 name = cache.hget('my_dict', 'name')
