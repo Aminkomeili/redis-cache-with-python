@@ -22,7 +22,7 @@ cache = RedisCache()
 
 To store a value in Redis cache, you can use the set method with a key and value:
 
-cache.set('my_key', {'name': 'John', 'age': 30}, expire=60)
+cache.set('my_key', {'name': 'Amin', 'age': 30}, expire=60)
 
 The expire parameter specifies the time-to-live (TTL) for the key, in seconds. After the TTL expires, the key will be automatically deleted from the cache.
 ## Retrieving Data
@@ -38,7 +38,7 @@ If the key does not exist in the cache, get will return None.
 To add an item to a list in Redis cache, you can use the lpush method with a key and value:
 
 
-cache.lpush('my_list', {'name': 'Jane', 'age': 25})
+cache.lpush('my_list', {'name': 'Ali', 'age': 25})
 
 To retrieve a list from Redis cache, you can use the lrange method with a key:
 
@@ -51,7 +51,7 @@ print(my_list)
 To set a field in a dictionary in Redis cache, you can use the hset method with a key, field, and value:
 
 
-cache.hset('my_dict', 'name', 'Bob')
+cache.hset('my_dict', 'name', 'Reza')
 
 To retrieve a field from a dictionary in Redis cache, you can use the hget method with a key and field:
 
