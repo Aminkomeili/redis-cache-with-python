@@ -55,7 +55,6 @@ cache.hset('my_dict', 'name', 'Reza')
 
 To retrieve a field from a dictionary in Redis cache, you can use the hget method with a key and field:
 
-
 name = cache.hget('my_dict', 'name')
 print(name)
 
