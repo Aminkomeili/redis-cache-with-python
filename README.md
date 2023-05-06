@@ -1,6 +1,7 @@
 # Redis Cache with Python
 
 This is a Python project that demonstrates how to use Redis as a cache server for storing structured data such as dictionaries and lists. The project uses the redis library to connect to a Redis server and provides a RedisCache class for interacting with the Redis cache.
+
 ## Requirements
 
 1. Python 3.x
