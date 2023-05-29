@@ -43,7 +43,6 @@ cache.lpush('my_list', {'name': 'Ali', 'age': 25})
 
 To retrieve a list from Redis cache, you can use the lrange method with a key:
 
-
 my_list = cache.lrange('my_list')
 print(my_list)
 
