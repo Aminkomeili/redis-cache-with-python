@@ -38,7 +38,6 @@ If the key does not exist in the cache, get will return None.
 
 To add an item to a list in Redis cache, you can use the lpush method with a key and value:
 
-
 cache.lpush('my_list', {'name': 'Ali', 'age': 25})
 
 To retrieve a list from Redis cache, you can use the lrange method with a key:
